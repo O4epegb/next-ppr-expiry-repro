@@ -2,7 +2,7 @@
 
 On a fresh Vercel Hobby project, the first request to an expired, partially prerendered route returned its original build timestamp. The same app under `next start` generated a fresh timestamp for that request. Both servers had already served a newer cached copy before the idle interval.
 
-Does Vercel intentionally serve the build fallback in this case? The Next.js documentation describes synchronous regeneration on the first request after expiry. [Next.js cacheLife documentation](https://nextjs.org/docs/app/api-reference/functions/cacheLife#expire)
+Does Vercel intentionally serve the build fallback in this case? The Next.js documentation describes synchronous regeneration on the first request after expiry. [Next.js cacheLife documentation](https://nextjs.org/docs/app/api-reference/functions/cacheLife#expire) · [Vercel Community discussion](https://community.vercel.com/t/should-a-ppr-route-serve-its-build-time-copy-after-cachelifeexpire/1000000425)
 
 ## The two routes
 
